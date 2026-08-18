@@ -10,8 +10,9 @@ st.set_page_config(page_title="ML Model Evaluator", layout="wide")
 
 st.title("Machine Learning Classification Model Evaluator")
 st.write("""
-This app evaluates various classification models on the Breast Cancer Wisconsin (Diagnostic) dataset.
-Please upload the `test_data.csv` file to see the evaluation metrics and confusion matrix.
+This app evaluates various classification models trained on the **Breast Cancer Wisconsin (Diagnostic)** dataset ([Dataset Reference](https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic)). 
+
+⚠️ **Note on Data Upload:** The models were trained on 30 specific numerical features (such as tumor radius, texture, and perimeter). Therefore, any uploaded CSV must be structurally identical to this dataset. You may use the provided `test_data.csv` file from the repository, or upload any other related test data CSV of your choice to view the evaluation metrics and confusion matrix.
 """)
 
 # Sidebar
